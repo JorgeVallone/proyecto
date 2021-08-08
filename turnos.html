@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="Atencion medica Virtual adolescente solicitud de turnos para la atención médica en forma virtual para la especialidad elegida">
+    <meta name="keywords"
+        content="Turnos virtuales, Watsapp, Facebook, Instagram Adolecente, Virtual, Hospital, Clinica, Enfermedades, Tratamiento, Ginecologia, Psicologia">
+    <title>Centro de Atencion Virtual Adolecente-Ginecología Psicologia/Turnos</title>
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/logo.jpg" width="60" height="60" class="logo" />
+
+        <!-- Esto son los navs que voy a listar uno al lado del otro -->
+        <!-- Les agregue unas sublistas para ir a otros lugares -->
+
+        <ul class="lista">
+            <li class="inicio"><a href="index.html">INICIO</a>
+                <ul class="sublista">
+                    <li><a href="especialistas.html">Medicos</a></li>
+                    <li><a href="turnos.html">Turnos</a></li>
+                    <li><a href="covid19.html">covid19</a></li>
+                </ul>
+            </li>
+            <li class="inicio"><a href="nosotros.html">NOSOTROS</a>
+                <ul class="sublista">
+                    <li><a href="nosotros.html">Mision</a></li>
+                    <li><a href="nosotros.html">Vision</a></li>
+                    <li><a href="nosotros.html">Objetivos</a></li>
+                    <li><a href="nosotros.html">Valores</a></li>
+
+                </ul>
+            </li>
+
+            <li class="inicio"><a href="servicios.html">SERVICIOS</a>
+                <ul class="sublista">
+                    <li><a href="servicios.html">Instalaciones</a></li>
+                    <li><a href="servicios.html">Pedidos</a></li>
+                    <li><a href="nosotros.html">Profesionales</a></li>
+
+                </ul>
+
+            </li>
+
+
+            <li class="inicio"><a id="lista2" href="especialistas.html">ESPECIALISTAS</a>
+                <ul class="sublista">
+                    <li><a href="especialistas.html">Ginecologia</a></li>
+                    <li><a href="especialistas.html">Psicologia</a></li>
+
+                </ul>
+
+
+            </li>
+            <li><a href="turnos.html">TURNOS</a></li>
+
+
+            <li><a id="lista3" href="covid19.html">COVID19</a></li>
+        </ul>
+
+
+    </header>
+
+    <h1 class="turnos--h1__formato">Solicitud de turnos</h1>
+
+    <form action="#" method="Get">
+
+        <label for="nombre_completo">Nombre y Apellido</label>
+        <input type="text" name="nombre_completo" placeholder="nombre completo">
+        <br><br>
+
+        <label for="numero_documento">Número de Documento</label>
+        <input type="number" name="numero_documento" required placeholder="número de documento">
+        <br><br>
+
+        <label for="mail_de_usuario">E-Mail</label>
+        <input type="email" name="mail_de_usuario" required placeholder="mail de usuario">
+        <br><br>
+
+        <label for="numero_de_contacto">Numero de Contacto</label>
+        <input type="number" name="numero_de_contacto" required placeholder="número de contacto">
+        <br><br>
+
+        <textarea name="quejas" id="quejas" cols="40"></textarea>
+        <br><br>
+
+        <label for="checkbox">Tiene conexion a internet?</label>
+        <input type="checkbox">
+        <br>
+        <label for="checkbox">Desea recibir confirmacion de turno por watsapp?</label>
+        <input type="checkbox">
+        <br>
+        <label for="checkbox">Desea que llamemos 10 minutos antes de la consulta?</label>
+        <input type="checkbox">
+        <br><br>
+
+        <label for="especialidad">Especialidad</label>
+        <select name="especialidad" id="especialidad" form="Especialidad">
+            <option value="Elige">Selecciona</option>
+            <option value="Psicologia">Psicologia</option>
+            <option value="Ginecologia">Ginecologia</option>
+        </select>
+        <br><br>
+        <label for="especialistas">especialistas</label>
+        <select name="especialistas" id="Especialistas" form="especialistas">
+            <option value="Psicologia">Selecciona</option>
+            <option value="Psicologia">Gabriela Lopez</option>
+            <option value="Psicologia">Roxana Cabrian</option>
+            <option value="Psicologia">Cristina Mora</option>
+            <option value="Ginecologia">Marcos Ariazu</option>
+        </select>
+        <br><br>
+        <input type="submit">
+        <br><br>
+        <input type="reset">
+        <br><br>
+
+    </form>
+    <footer class="footerDeIndex">
+        <h3>Paso de los andes 366 - Mendoza <a href="./politica.html">Politica de privacidad</a></h3>
+
+        <div class="container">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="nosotros.html">Nosotros</a></li>
+              <li class="breadcrumb-item"><a href="servicios.html">Servicios</a></li>
+              <li class="breadcrumb-item"><a href="especialistas.html">Especialistas</a></li>
+              <li class="breadcrumb-item active">Turnos</li>
+              <li class="breadcrumb-item"><a href="covid19.html">Covid19</a></li>
+            </ol>
+        </div>
+        
+    </footer>
+</body>
+
+</html>

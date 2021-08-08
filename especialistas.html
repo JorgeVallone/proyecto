@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,900;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+    <meta name="description"
+        content="Atencion medica Virtual adolescente los especialistas de nuestra institucion dispuestos a brindar la mejor atención médica">
+    <meta name="keywords"
+        content="Especialistas en Ginecología y Psicologia ,Médicos, Adolecente, Virtual, Hospital, Clinica, Enfermedades, Tratamiento, Ginecologia, Psicologia">
+  <title>Centro de Atencion Virtual Adolecente-Ginecología Psicologia/Especialistas</title>
+</head>
+
+
+
+<body class="imagenEspecialistas">
+  <header>
+    <img src="imagenes/logo.jpg" width="60" height="60" class="logo" />
+
+    <!-- Esto son los navs que voy a listar uno al lado del otro -->
+    <!-- Les agregue unas sublistas para ir a otros lugares -->
+
+    <ul class="lista">
+      <li class="inicio"><a href="index.html">INICIO</a>
+        <ul class="sublista">
+          <li><a href="especialistas.html">Medicos</a></li>
+          <li><a href="turnos.html">Turnos</a></li>
+          <li><a href="covid19.html">covid19</a></li>
+        </ul>
+      </li>
+      <li class="inicio"><a href="nosotros.html">NOSOTROS</a>
+        <ul class="sublista">
+          <li><a href="nosotros.html">Mision</a></li>
+          <li><a href="nosotros.html">Vision</a></li>
+          <li><a href="nosotros.html">Objetivos</a></li>
+          <li><a href="nosotros.html">Valores</a></li>
+
+        </ul>
+      </li>
+
+      <li class="inicio"><a href="servicios.html">SERVICIOS</a>
+        <ul class="sublista">
+          <li><a href="servicios.html">Instalaciones</a></li>
+          <li><a href="servicios.html">Pedidos</a></li>
+          <li><a href="nosotros.html">Profesionales</a></li>
+
+        </ul>
+
+      </li>
+
+
+      <li class="inicio"><a id="lista2" href="especialistas.html">ESPECIALISTAS</a>
+        <ul class="sublista">
+          <li><a href="especialistas.html">Ginecologia</a></li>
+          <li><a href="especialistas.html">Psicologia</a></li>
+
+        </ul>
+
+
+      </li>
+      <li><a href="turnos.html">TURNOS</a></li>
+
+
+      <li><a id="lista3" href="covid19.html">COVID19</a></li>
+    </ul>
+
+
+  </header>
+
+  <h1 class="tituloEspecialistas">Especialistas</h1>
+
+  <!-- acordeonon -->
+  <div class="acordeon">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Psicologia
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>CONSULTA</strong> Atendemos la demanda interna y externa con turnos programados para psicología y
+            psicopedagogía.
+
+            La primera consulta la realiza un Equipo de Admisión, conformado por un psiquiatra y un psicólogo, quienes
+            evalúan las necesidades de tratamiento y realizan la derivación al o a los profesionales tratantes.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Ginecologia
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Cosnulta</strong> El Servicio de Ginecología busca la prevención de las patologías Ginecológicas.
+            Además se realizan Cirugías mínimamente invasiva: Histeroscopia y Laparoscopía con personal altamente
+            capacitado. Compromiso y Responsabilidad con los pacientes.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="contenedorEspecialistas">
+    <dl>
+      <dt class="psicologiaText">PSICOLOGIA</dt>
+      <br>
+      <dd id="listaPsicologia">Lic. Gabriel Lopez</dd>
+      <dd id="listaPsicologia">Lic. Roxana Cabrian</dd>
+      <dd id="listaPsicologia">Lic. Cristina Mora</dd>
+      <dd id="listaPsicologia">Lic. Mariana Perez Delgado</dd>
+      <dd id="listaPsicologia">Lic. Diego Marino</dd>
+    </dl>
+    <br>
+    <dl>
+      <dt class="ginecologiaText">GINECOLOGIA</dt>
+      <br>
+      <dd id="listaGinecologia">Dr. Alfredo Bianchi</dd>
+      <dd id="listaGinecologia">Dr. Raul Tonelli</dd>
+      <dd id="listaGinecologia">Dr. Enzo Coparonni</dd>
+      <dd id="listaGinecologia">Dra. Geraldine Bond</dd>
+      <dd id="listaGinecologia">Dra. Leticia Toro </dd>
+    </dl>
+  </div>
+
+  <!-- componente boostrap -->
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Obtener turnos</h5>
+          <p class="card-text">Si usted desea acceder a turnos por favor haga click aca.</p>
+          <a href="turnos.html" class="btn btn-primary">Ir a turnos</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Informacion Covid19</h5>
+          <p class="card-text">Para poder se atendido presencialmente lea estos consejos.</p>
+          <a href="covid19.html" class="btn btn-primary">Covid19</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <hr>
+  <footer class="footerDeIndex">
+    <h3>Paso de los andes 366 - Mendoza <a href="https://www.saludymedicina.org/politica-de-privacidad">Politica de
+        privacidad</a></h3>
+
+        <div class="container">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="nosotros.html">Nosotros</a></li>
+            <li class="breadcrumb-item"><a href="servicios.html">Servicios</a></li>
+            <li class="breadcrumb-item active">Especialistas</li>
+            <li class="breadcrumb-item"><a href="turnos.html">Turnos</a></li>
+            <li class="breadcrumb-item"><a href="covid19.html">Covid19</a></li>
+          </ol>
+      </div>
+
+
+  </footer>
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="servicios.html">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="./index.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="./nosotros.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="./servicios.html">3</a></li>
+      <li class="page-item"><a class="page-link" href="./especialistas.html">4</a></li>
+      <li class="page-item"><a class="page-link" href="./turnos.html">5</a></li>
+      <li class="page-item"><a class="page-link" href="./covid19.html">6</a></li>
+    </ul>
+  </nav>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
