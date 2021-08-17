@@ -1,553 +1,87 @@
+/* reseto de css */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* realizo una seleccion general en el body con un color general que me afecta a todo */
+body {
+  background-color: rgba(235, 17, 90, 0.199); }
+
+/* Le doy formato al titulo de la hoja index */
+.tituloPagina1 {
+  width: 1200px;
+  height: 0px;
+  padding: 80px;
+  margin: 0px; }
+
+/* Le doy forma al titulo dentro de la pagina */
+.seccion1 {
+  width: 650px;
+  height: 670px;
+  padding: 16px;
+  margin: 20px;
+  overflow: hidden;
+  border: double;
+  background-color: violet; }
+
+/* estas son las imagenes de las redes sociales que pongo al lado de la otra caja */
+.imagenesAsideIndex {
+  width: 100px;
+  height: 500px;
+  padding: 50px;
+  margin: 100px;
+  overflow: hidden; }
+
+/* Pongo en linea la section y el aside */
+section, aside {
+  display: inline-block; }
 
 /* Lo posiciono al logo para que quede fijo igual que la lista */
-.logo{
-    position: fixed;
-    top: 0px;
-}
-/* Le doy formato al titulo de la hoja index */
-.tituloPagina1{
-    width: 1200px;
-    height: 0px;
-    padding: 80px;
-    margin: 0px;
-}
+.logo {
+  position: fixed;
+  top: 0px; }
+
 /* Le doy formato a la lista del nav dandole paddig- width- margin- border-position- */
-.lista{
-    list-style: none;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    background: violet;
-    width: auto;
-    margin-top: 0px;
-    margin-left: 65px;
-    margin-bottom: 5px;
-    margin-right: 0px;
-    border: solid 1px black;
-    position: fixed;
-    top: 0px;
+.lista {
+  list-style: none;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background: violet;
+  width: auto;
+  margin-top: 0px;
+  margin-left: 65px;
+  margin-bottom: 5px;
+  margin-right: 0px;
+  border: solid 1px black;
+  position: fixed;
+  top: 0px; }
 
-}
 /* A las listas le doy por separado un formato */
-.lista li a{
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    display: block;
-    overflow: hidden;
-}
+.lista li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: block;
+  overflow: hidden; }
+
 /* Alineo las listas en el nav para me quede una al lado de la otra */
-.lista li{
-    display: inline-block;
-    text-align: center;
-}
+.lista li {
+  display: inline-block;
+  text-align: center; }
+
 /*  Le pongo un hover a la lista para que me de color cuando paso el mouse*/
-.lista li a:hover{
-    background:blue;
-}
-/* Le doy forma al titulo dentro de la pagina */
-.seccion1{
-width: 650px;
-height: 670px;
-padding: 16px;
-margin: 20px;
-overflow: hidden;
-border:double;
-background-color: violet;
-}
-/* estas son las imagenes de las redes sociales que pongo al lado de la otra caja */
-.imagenesAsideIndex{
-    width: 100px;
-    height: 500px;
-    padding: 50px;
-    margin: 100px;
-    overflow: hidden;   
-}
-/* Pongo en linea la section y el aside */
-section, aside{
-    display:inline-block;
-}
+.lista li a:hover {
+  background: blue; }
+
 /* Formato a sublistas */
-.sublista{
-    display: none;
-    position: absolute;
-    background-color:thistle;
-    color: white;
-} 
+.sublista {
+  display: none;
+  position: absolute;
+  background-color: thistle;
+  color: white; }
+
 /* Le doy un formato a la sublista para que pueda mostrarse cuando pasa el cursor */
-.inicio:hover > .sublista{
-    display: grid;
-}
-/* footer de index */
-.footerDeIndex{
-    width: 1000px;
-    height: 50px;
-    padding: 50px;
-    margin: 10px;
-    background-color: rgba(204, 3, 160, 0.884);
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: medium;
-    border-width: 20px;
-}
-
-/* --------------SeccionNosotros--------------- */
-.padreNosotros{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 200px;
-    align-items: stretch;
-    align-content:space-between; 
-}
-ol li{
-    list-style: none;
-    text-align: center;
-}
-li{
-    flex-basis: auto;
-}
-p{
-    color: lightcoral;
-    height: fit-content;
-}
-.tituloPagina2{
-    width: 1200px;
-    height: 0px;
-    padding: 80px;
-    margin: 0px;
-}
-.imagenesNosotros{
-    flex-basis: 300px;
-    position: relative;
-    height: 500px;
-    padding: 50px;
-    margin: 100px;
-    overflow: hidden;   
-}
-    
-
-/* -------Esto es el cuadro---------- */
-.beneficios{
-    background-color: rgb(179, 3, 149);
-    color: rgb(56, 0, 83);
-    text-align-last: center;
-}
-h1 {
-    background-color: rgb(94, 0, 89);
-    color: violet;
-    /* centro a todos los H1 de mí pagina */
-    text-align-last: center;
-    /* le agrego font weigth */
-    font-weight: inherit;        
-    /* Pongo en mayuscula (uppercase) a todos los H1 */
-    text-transform: uppercase;
-    border-style: ridge;
-    /* Agrego un borde */
-    border-color: white;
-    }
-.esteEsUnSubtitulo {
-    background-color: rgba(87, 7, 56, 0.178);
-    color: rgba(161, 12, 12, 0.466);
-    /* le agrego un font family a todas las etiquetas h2 */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* Le agrego un interlineado a los h2 */
-    line-height: 1.6;
-    /* Alineo el texto al centro */
-    text-align-last: center;
-}
-/* Le cambio el tipo de letra al texto del cuadro */
-.textoArialHelveticaSanSerrif{
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-.horizontal{
-    background-color: tomato;
-    /* Alineo el texto del cuadro en el centro */
-    text-align-last: center;
-
-}
-.black{
-    background-color: blanchedalmond;
-    /* Centro al cuadro */
-    text-align-last: center;
-}
-
-/* Estos estilos son de la pagina servicios */
-.serviciosh1{
-    background-color: rgb(169, 20, 255);
-    color: white;
-}
-#serviciosh2{
-    background-color: white;
-    color: rgb(169, 20, 255);
-}
-
-/*--------------------------------------- PAGINAS ESPECIALISTAS--------------------------------- */
-/* este es el head */
-.contenedorEspecialistas{
-width: 650px;
-height: auto;
-padding: 70px;
-margin: 30px;
-overflow: hidden;
-border:double;
-background-color: violet;
-}
-
-.tituloEspecialistas{
-    height: 180px;
-    padding: 80px;
-}
-.acordeon{
-color: blueviolet;
-}
-
- /*Le agrego una imagen al fondo  */
-.imagenEspecialistas{
-    background-image: url(./imagenes/clinica.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center;
-}
-
-
-
-/* Esta es el título de Psicologia realizo modificaciones */
-.psicologiaText{
-    /* Cambio el estilo de letra */
-    font-style: italic;
-     /* Le agrego un borde */
-    font-weight: bolder;
-    /* Hago que se haga mas grande */
-    font-size:x-large;
-    /* Agrego una familia de fuente por si el ordenador no tiene el estilo que le asigne me va descartando */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* Centro el Titulo */
-    text-align-last:left;
-    /* Transformo el texto todo en mayuscula */
-    text-transform: uppercase;
-    /* Le agrego espacio al texto */
-    letter-spacing: 10px;
-    /* Pongo un color al texto */
-    color:rgb(255, 0, 98);
-    background-color:thistle;
-    
-}
-/* Esta es la lista de Psicologia */
-#listaPsicologia{
-    /* color de fondo */
-    background-color: rgb(205, 33, 240);
-    /* Espacio entre letras */
-    word-spacing: 5px;
-    /* Alineo el texto al centro */
-    text-align-last:left;
-    /* Mayuscula al texto */
-    text-transform: capitalize;
-    list-style-type: georgian;    
-    /* Le agrego una fuente de Google Font */
-    font-family:'Otomanopee One', sans-serif;
-}
-/* Ginecologia */
-.ginecologiaText {
-    /* Cambio el estilo de letra */
-    font-style: oblique;
-    /* Le agrego un borde */
-    font-weight:bold;
-    /* Aplico font size para que se haga mas grande */
-    font-size: x-large;
-    /* Lo alineo a la derecha */
-    text-align-last: left;
-    /* Le doy un espaciado de 10px a las letras */
-    letter-spacing: 10px;
-    /* Aplico formato */
-    color: rgb(153, 1, 95);
-    background-color: rgb(245, 155, 233);
-}
-/* Lista de Ginecologia */
-#listaGinecologia{
-    /* Color fondo */
-    background-color: magenta;
-    /* Espacio entre letras */
-    word-spacing: 5px;
-    /* Alineo el texto a la izquierda */
-    text-align-last: left;
-    list-style-type:lower-latin;
-    /* Nuevo estilo de letra */
-    font-family: 'Tourney', cursive;
-    /* le agrego color blanco a la letra */
-    color: white;
-}
-
-/* Los parafos de index */
-p{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size:x-large;
-    background-color:white;
-}
-/* Span del index */
-span{
-    text-transform: uppercase;
-    color: violet;
-    background-color: white; 
-    }
-
-
-/* -------------------Grid sobre pagina de Servicios ---------------------- */
-
-/* Este es el body con grid le pongo un color diferente para que no sea igual que los anteriores */
-.bodyServicios{
-    background-color: lightcoral;
-    list-style: none;
-}
-
-/* La lista está predeterminada por flexbox */
-
-/* Este es el contenedor de grid o padre del div contenedor */
-.contenedor{
-    width: 70%;
-    max-width: 1000px;
-    margin: 20px auto;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
-    padding: 10px;
-    border-radius: 4px;
-}
-
-/* Este contiene el headerServicios para darle un estilo diferente al que ya tiene como predeterminado por mí anteriormente */
-.headerServicios{
-    background-color: rgba(243, 0, 101, 0.226);
-    text-align-last: center;
-    border-color:initial;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Dentro del header un subtitulo que tambien le doy class para variar estilo */
-.subtituloServicios{
-    text-align: initial;
-    padding: 20px;
-    font-style: italic;
-    text-decoration: none;
-    color: rgb(201, 0, 0);
-}
-
-/* --------------------mainServicios------------------ */
-/* Este el contenido del main y lo posiciono dentro de la caja*/
-.contenido{
-    grid-column: 2 / 4;    
-}
-
-/* Este es el parrafo dentro del contenido o main le doy formato y posiciono con grid */
-.parrafoServicios{
-    grid-column: auto;
-    background-color: rgba(243, 0, 101, 0.226);
-    color: rgb(6, 17, 173);
-    justify-content: center;
-    font-family: monospace;
-    text-decoration-style: none;
-}
-
-/* -------------------AsideServicios---------------- */
-.sidebar{
-    text-align: center;
-    justify-content: center;
-    grid-row: span;
-    grid-column: 1 / 4;
-
-}
-.subtituloDeTabla{
-    background-color:rgba(204, 3, 160, 0.884);
-    text-align-last: center;
-    color:red
-}
-
-/* Imagenes */
-.imagen1 .imagen2 .imagen3{
-height: 100px;
-text-align: center;
-align-items: center;
-justify-content: center;
-}
-
-
-/* footer  */
-.footerNosotros{
-    padding: 20px;
-    background-color: white;
-    text-align: center;
-    text-decoration-style: solid;
-    grid-column: 4 / 1;
-    grid-row: span 4;
-}
-
-
-/* mediasQuery */
-
-@media (min-width: 517px) and (max-width:980px) {
-    .bodyServicios{
-        display: flex;
-        flex-direction: column;
-        background:rgb(230, 6, 118);
-
-}
-}
-
-/* DispositivoSmall */
-
-@media (min-width:351px) and (max-width:516px) {
-main .contenido {
-    display: flex;
-    flex-direction: row;
-    background: blue;
-}
-.padreGrid {
-    display: flex;
-    flex-direction: row;
-}
-}
-/* DispositivoX5 */
-
-@media (min-width: 0px) and (max-width:350px) {
-.bodyServicios{
-        display: flex;
-        flex-direction: column;
-        background: yellow;   
-}
-.padreGrid{
-    grid-template-columns: auto;
-}
-
-.headerServicios{
-    flex-direction: column;
-    
-}
-.contenido{
-    flex-direction: column;
-}
-}
-
-/* --------------------------paginaCovid19------------------------------------ */
-.bodyCovid19{
-    /* Le agrego una gradiente al fondo */
-    background-image: linear-gradient(rgba(37, 0, 23, 0.123), rgba(255, 0, 170, 0.918));
-    
-    /* Ordeno con un templateGridAreas */
-    display: grid;
-    grid-template-areas: 
-    "encabezado encabezado encabezado"
-    "principal principal informacion"
-    "principal principal informacion"
-    "pieDePagina pieDePagina pieDePagina"
-    ;
-    grid-template-rows: 75px 1fr 75px auto; 
-    grid-template-columns: 10% auto 10%;
-    grid-column-gap: 5px;
-    grid-row-gap: 3px;
-    justify-content: center;
-}
-
-.headerCovid19{
-    grid-area: encabezado;
-}
-
-.mainCovid19{
-    grid-area: principal;
-
-}
-
-/* transicion de imagen covid */
-.imageCovid19{
-
-    width: 550px; height: 350px;
-    transition: all 10s;       
-
-    width: 550px;
-    font-size: 550px; 
-}
-/* Formato de imagen covid19 */
-.imageCovid19{
-    width: 200px;
-    height: 200px;
-    background-color: rgba(255,0,0,0.9);
-    border: solid 1px;
-} 
-.imageCovid19:hover {
-    padding: 20px;
-    transform: skewY(25deg)
-}
-
-/* pongo una transicion al titulo */
-.tituloCovid19:hover{
-    background-color:midnightblue;
-    color: red;
-
-}
-/* Este es el aside y le coloco una animacion */
-.asideCovid19{
-    grid-area: informacion;
-    width: auto;
-    height: auto;
-    animation: cambioDeColor 4s infinite;
-    background-color: rgb(255, 0, 106);
-
-}
-@keyframes cambioDeColor {
-0% {
-    transform: scale(0);
-}  
-
-100%{
-    transform: scale(1.1);
-}
-}
-
-/* Este es el footer de covid19 y el agrego una animacion en el html */
-.footerCovid19{
-    grid-area: pieDePagina;
-    
-}
-
-/* ----------------------------BoostrapCSS----------------- */
-/* Le agrego estilo al subtitulo */
-
-.subtituloBoostrap{
-    background-color: blueviolet;
-    color: white;
-    text-decoration-line: underline;
-    text-align: center;
-
-}
-
-/* estiloParrafoDonacion */
-.parrafoDonacion{
-    background-color: rgba(80, 1, 153, 0.226);
-    color: rgba(59, 4, 4, 0.664);
-}
-
-/* estiliLista */
-.listaBoostrap{
-    background-color: rgba(129, 0, 250, 0.301);
-    font-style: italic;
-}
-/* estiloVacunacion */
-.vacunacion{
-background-color: rgba(129, 0, 250, 0.301);
-}
-
-/* estiloParrafoVacunacion */
-.parrafoVacunacion{
-    background-color: rgba(243, 0, 101, 0.226);
-    color: snow;
-}
-
-/* ---------------------pagina__turnos-------------------------- */
-.turnos--h1__formato{
-    height: 0px;
-    padding: 70px;
-}
+.inicio:hover > .sublista {
+  display: grid; }
