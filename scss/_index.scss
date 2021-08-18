@@ -9,11 +9,13 @@ body{
     background-color: rgba(235, 17, 90, 0.199);
 
 /* Le doy formato al titulo de la hoja index */
-    .tituloPagina1{
+    .titulo__pagina--h1{
     width: 1200px;
     height: 0px;
     padding: 80px;
-    margin: 0px;}
+    margin: 0px;
+    background-color: blueviolet;
+    color: white;
 
 /* Le doy forma al titulo dentro de la pagina */
     .seccion1{
@@ -36,4 +38,4 @@ body{
     /* Pongo en linea la section y el aside */
     section, aside{
         display:inline-block;
-    }}}
+    }}}}}

@@ -6,31 +6,32 @@
 /* realizo una seleccion general en el body con un color general que me afecta a todo */
 body {
   background-color: rgba(235, 17, 90, 0.199);
-  /* Le doy formato al titulo de la hoja index */ }
-  body .tituloPagina1 {
+ }
+ /* Le doy formato al titulo de la hoja index */
+  body .titulo__principal--h1 {
     width: 1200px;
     height: 0px;
     padding: 80px;
     margin: 0px;
-    /* Le doy forma al titulo dentro de la pagina */ }
-    body .tituloPagina1 .seccion1 {
-      width: 650px;
-      height: 670px;
-      padding: 16px;
-      margin: 20px;
+}
+  body .seccion1 {
+    width: 650px;
+    height: 670px;
+    padding: 16px;
+    margin: 20px;
+    overflow: hidden;
+    border: double;
+    background-color: violet;
+    /* estas son las imagenes de las redes sociales que pongo al lado de la otra caja */ }
+    body .seccion1 .imagenesAsideIndex {
+      width: 100px;
+      height: 500px;
+      padding: 50px;
+      margin: 100px;
       overflow: hidden;
-      border: double;
-      background-color: violet;
-      /* estas son las imagenes de las redes sociales que pongo al lado de la otra caja */ }
-      body .tituloPagina1 .seccion1 .imagenesAsideIndex {
-        width: 100px;
-        height: 500px;
-        padding: 50px;
-        margin: 100px;
-        overflow: hidden;
-        /* Pongo en linea la section y el aside */ }
-        body .tituloPagina1 .seccion1 .imagenesAsideIndex section, body .tituloPagina1 .seccion1 .imagenesAsideIndex aside {
-          display: inline-block; }
+      /* Pongo en linea la section y el aside */ }
+      body .seccion1 .imagenesAsideIndex section, body .seccion1 .imagenesAsideIndex aside {
+        display: inline-block; }
 
 /* Lo posiciono al logo para que quede fijo igual que la lista */
 .logo {
