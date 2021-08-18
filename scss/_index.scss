@@ -15,12 +15,14 @@ body{
     height: 0px;
     padding: 80px;
     margin: 0px;
-    background-color: white;}
+    background-color: white;
+    text-align: center;
+}
 
 /* Le doy forma al titulo dentro de la pagina */
     .seccion1{
     width: 650px;
-    height: 670px;
+    height: 760px;
     padding: 16px;
     margin: 20px;
     overflow: hidden;
@@ -31,10 +33,27 @@ body{
     .imagenesAsideIndex{
         width: 100px;
         height: 500px;
-        padding: 50px;
+        padding: 5px;
         margin: 100px;
-        overflow: hidden;   
+           
     }
+
+    .esteEsUnSubtitulo {
+        background-color: rgba(87, 7, 56, 0.178);
+        color: rgba(161, 12, 12, 0.466);
+        /* le agrego un font family a todas las etiquetas h2 */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* Le agrego un interlineado a los h2 */
+        line-height: 1.6;
+        /* Alineo el texto al centro */
+        text-align-last: center;
+    }
+    p{
+        text-align: justify;
+        text-decoration-style: solid;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
     /* Pongo en linea la section y el aside */
     section, aside{
         display:inline-block;
