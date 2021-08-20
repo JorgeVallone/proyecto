@@ -16,33 +16,42 @@
     margin-left: 65px;
     margin-bottom: 5px;
     margin-right: 0px;
-    border: solid 1px black;
+    border: solid 2px black;
     position: fixed;
     top: 0px;
 
-}
-/* A las listas le doy por separado un formato */
-.lista li a{
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    display: block;
-    overflow: hidden;
-}
-/* Alineo las listas en el nav para me quede una al lado de la otra */
-.lista li{
-    display: inline-block;
-    text-align: center;
-}
+    /* A las listas le doy por separado un formato */
+
+    li {
+        display: inline-block;
+        text-align: center;
+        
+    /* Alineo las listas en el nav para me quede una al lado de la otra */
+    
+    a{
+        
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        display: block;
+        overflow: hidden;
+    }    
+        }
+    }
+    a:hover{
+        background-color: blueviolet;
+    }
+
+
+
+
 /*  Le pongo un hover a la lista para que me de color cuando paso el mouse*/
-.lista li a:hover{
-    background:blue;
-}
+
 /* Formato a sublistas */
 .sublista{
     display: none;
     position: absolute;
-    background-color:thistle;
+    background-color:rgb(121, 5, 121);
     color: white;
 } 
 /* Le doy un formato a la sublista para que pueda mostrarse cuando pasa el cursor */

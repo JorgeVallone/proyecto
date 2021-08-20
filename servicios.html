@@ -12,65 +12,60 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bodyServicios">
+<header>
+    <img src="imagenes/logo.jpg" width="60" height="60" class="logo" />
 
-    <!-- Este es un nav que ya tiene su diseño. -->
+    <!-- Esto son los navs que voy a listar uno al lado del otro -->
+    <!-- Les agregue unas sublistas para ir a otros lugares -->
 
-    <header>
-        <img src="imagenes/logo.jpg" width="60" height="60" class="logo" />
+    <ul class="lista">
+        <li class="inicio"><a href="index.html">INICIO</a>
+            <ul class="sublista">
+                <li><a href="especialistas.html">Medicos</a></li>
+                <li><a href="turnos.html">Turnos</a></li>
+                <li><a href="covid19.html">covid19</a></li>
+            </ul>
+        </li>
+        <li class="inicio"><a href="nosotros.html">NOSOTROS</a>
+            <ul class="sublista">
+                <li><a href="nosotros.html">Mision</a></li>
+                <li><a href="nosotros.html">Vision</a></li>
+                <li><a href="nosotros.html">Objetivos</a></li>
+                <li><a href="nosotros.html">Valores</a></li>
 
-        <!-- Esto son los navs que voy a listar uno al lado del otro -->
-        <!-- Les agregue unas sublistas para ir a otros lugares -->
+            </ul>
+        </li>
 
-        <ul class="lista">
-            <li class="inicio"><a href="index.html">INICIO</a>
-                <ul class="sublista">
-                    <li><a href="especialistas.html">Medicos</a></li>
-                    <li><a href="turnos.html">Turnos</a></li>
-                    <li><a href="covid19.html">covid19</a></li>
-                </ul>
-            </li>
-            <li class="inicio"><a href="nosotros.html">NOSOTROS</a>
-                <ul class="sublista">
-                    <li><a href="nosotros.html">Mision</a></li>
-                    <li><a href="nosotros.html">Vision</a></li>
-                    <li><a href="nosotros.html">Objetivos</a></li>
-                    <li><a href="nosotros.html">Valores</a></li>
+        <li class="inicio"><a href="servicios.html">SERVICIOS</a>
+            <ul class="sublista">
+                <li><a href="servicios.html">Instalaciones</a></li>
+                <li><a href="servicios.html">Pedidos</a></li>
+                <li><a href="nosotros.html">Profesionales</a></li>
 
-                </ul>
-            </li>
+            </ul>
 
-            <li class="inicio"><a href="servicios.html">SERVICIOS</a>
-                <ul class="sublista">
-                    <li><a href="servicios.html">Instalaciones</a></li>
-                    <li><a href="servicios.html">Pedidos</a></li>
-                    <li><a href="nosotros.html">Profesionales</a></li>
-
-                </ul>
-
-            </li>
+        </li>
 
 
-            <li class="inicio"><a id="lista2" href="especialistas.html">ESPECIALISTAS</a>
-                <ul class="sublista">
-                    <li><a href="especialistas.html">Ginecologia</a></li>
-                    <li><a href="especialistas.html">Psicologia</a></li>
+        <li class="inicio"><a id="lista2" href="especialistas.html">ESPECIALISTAS</a>
+            <ul class="sublista">
+                <li><a href="especialistas.html">Ginecologia</a></li>
+                <li><a href="especialistas.html">Psicologia</a></li>
 
-                </ul>
-
-
-            </li>
-            <li><a href="turnos.html">TURNOS</a></li>
+            </ul>
 
 
-            <li><a id="lista3" href="covid19.html">COVID19</a></li>
-        </ul>
+        </li>
+        <li><a href="turnos.html">TURNOS</a></li>
 
+
+        <li><a id="lista3" href="covid19.html">COVID19</a></li>
+    </ul>
     </header>
 
     <!-- EsteEsElTituloDeLaPágina -->
 
-    <h1 class="tituloPagina1">SERVICIOS</h1>
+    <h1 class="titulo__pagina--h1">SERVICIOS</h1>
 
     <!--Este es el body le agrego un div para acomodar todo con Grid -->
 
@@ -187,19 +182,19 @@
         <!-- Agrego 3 imagenes abajo -->
 
 
-        <div class="imagen1">
+        <div class="imagenServicios">
 
             <img width="320" src="imagenes/clinica.jpg" alt="clinica1">
 
         </div>
 
-        <div class="imagen2">
+        <div class="imagen2Servicios">
 
             <img src="imagenes/clinica2.jfif" alt="clinica">
 
         </div>
 
-        <div class="imagen3">
+        <div class="imagen3Servicios">
 
             <img width="310" src="imagenes/pasillo hospital.jpg" alt="pasillo">
 
@@ -211,17 +206,7 @@
 
         <footer class="footerNosotros">
             <h3>Paso de los andes 366 - Mendoza <a href="./politica.html">Politica de privacidad</a></h3>
-            <div class="container">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
-                  <li class="breadcrumb-item"><a href="nosotros.html">Nosotros</a></li>
-                  <li class="breadcrumb-item active">Servicios</li>
-                  
-                  <li class="breadcrumb-item"><a href="especialistas.html">Especialistas</a></li>
-                  <li class="breadcrumb-item"><a href="turnos.html">Turnos</a></li>
-                  <li class="breadcrumb-item"><a href="covid19.html">Covid19</a></li>
-                </ol>
-            </div>
+           
         </footer>
 
     </div>

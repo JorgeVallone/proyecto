@@ -1,0 +1,119 @@
+
+/* La lista está predeterminada por flexbox */
+
+/* Este es el contenedor de grid o padre del div contenedor */
+.contenedor{
+    width: 70%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Dentro del header un subtitulo que tambien le doy class para variar estilo */
+.subtituloServicios{
+    text-align: initial;
+    padding: 20px;
+    font-style: italic;
+    text-decoration: none;
+    color: rgb(201, 0, 0);
+}
+
+/* --------------------mainServicios------------------ */
+/* Este el contenido del main y lo posiciono dentro de la caja*/
+.contenido{
+    grid-column: 2 / 4;    
+}
+
+/* Este es el parrafo dentro del contenido o main le doy formato y posiciono con grid */
+.parrafoServicios{
+    grid-column: auto;
+    background-color: rgba(243, 0, 101, 0.226);
+    color: rgb(6, 17, 173);
+    justify-content: center;
+    font-family: monospace;
+    text-decoration-style: none;
+}
+
+/* -------------------AsideServicios---------------- */
+.sidebar{
+    text-align: center;
+    justify-content: center;
+    grid-row: span;
+    grid-column: 1 / 4;
+
+}
+.subtituloDeTabla{
+    background-color:rgba(204, 3, 160, 0.884);
+    text-align-last: center;
+    color:red
+}
+
+/* Imagenes */
+.imagenServicios .imagen2Servicios .imagen3Servicios{
+height: 100px;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+
+/* footer  */
+.footerNosotros{
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    text-decoration-style: solid;
+    grid-column: 4 / 1;
+    grid-row: span 4;
+}
+
+
+/* mediasQuery */
+
+@media (min-width: 517px) and (max-width:980px) {
+    .bodyServicios{
+        display: flex;
+        flex-direction: column;
+        background:rgb(230, 6, 118);
+
+}
+}
+
+/* DispositivoSmall */
+
+@media (min-width:351px) and (max-width:516px) {
+main .contenido {
+    display: flex;
+    flex-direction: row;
+    background: blue;
+}
+.padreGrid {
+    display: flex;
+    flex-direction: row;
+}
+}
+/* DispositivoX5 */
+
+@media (min-width: 0px) and (max-width:350px) {
+.bodyServicios{
+        display: flex;
+        flex-direction: column;
+        background: yellow;   
+}
+.padreGrid{
+    grid-template-columns: auto;
+}
+
+.headerServicios{
+    flex-direction: column;
+    
+}
+.contenido{
+    flex-direction: column;
+}
+}

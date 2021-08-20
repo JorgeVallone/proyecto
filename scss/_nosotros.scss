@@ -1,0 +1,55 @@
+/* --------------SeccionNosotros--------------- */
+
+.padreNosotros{
+display: grid;
+width: 100%;
+height: 250px;
+grid-template-areas: 
+"vision imagen1"
+"mision imagen2"
+"objetivos imagen3"
+"valores imagen4"
+"foto foto"
+"footer footer";
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 2fr 1fr;
+justify-items: stretch;
+}    
+.vision{
+    grid-area: vision;
+}
+.mision{
+    grid-area: mision;
+}
+.objetivos{
+    grid-area: objetivos;
+}
+.valores{
+    grid-area: valores;
+}
+.imagen1{
+    grid-area: imagen1;
+
+}
+.imagen2{
+    grid-area: imagen2;
+
+}
+.imagen3{
+grid-area: imagen3;
+
+}
+.imagen4{
+grid-area: imagen4;
+
+}
+
+.foto{
+grid-area: foto;
+align-items: center;
+}
+
+.footerNosotros{
+    grid-area: footer;
+}
+

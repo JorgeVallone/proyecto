@@ -53,8 +53,23 @@ body{
         text-decoration-style: solid;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+    .index__parrafo--mayuscula{
+        text-transform: uppercase;
+        text-align-last: center;
+        font-weight: bold;
+        font-size: x-large;
+    }
+    .index__imagenes--medicos{
+        border-image: stretch;
+        text-align-last: center;
+    }
 
     /* Pongo en linea la section y el aside */
     section, aside{
         display:inline-block;
+    }
+    .card-group{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
