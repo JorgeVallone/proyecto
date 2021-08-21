@@ -2,11 +2,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
     
 }
 /* realizo una seleccion general en el body con un color general que me afecta a todo */
 body{
-    background-color: rgba(235, 17, 90, 0.199);
+    background-color: $backgroundcolor;
 }
 
 /* Le doy formato al titulo de la hoja index */
