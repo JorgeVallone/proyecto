@@ -1,7 +1,7 @@
 /* este es el head */
 .contenedorEspecialistas{
-    width: 650px;
-    height: auto;
+    
+    height: 1fr;
     padding: 70px;
     margin: 30px;
     overflow: hidden;
@@ -15,8 +15,11 @@
     
     .section__boostrap--especialistas{
         background-color: aqua;
-        width: auto;
+        margin-top: auto;
         height: auto;
+        width: 70%;
+        max-width: 1000px;
+        padding: 30px;
+        margin-left: 120px;
     }
     
-   

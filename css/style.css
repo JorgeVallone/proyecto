@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* reseto de css */
 * {
-  margin: 0;
-  padding: 0;
+  margin: margin 0;
+  padding: padding 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none; }
@@ -22,7 +22,8 @@ body {
 
 /* Le doy forma al titulo dentro de la pagina */
 .seccion1 {
-  width: 650px;
+  width: 70%;
+  max-width: 1000px;
   height: 760px;
   padding: 16px;
   margin: 20px;
@@ -36,6 +37,9 @@ body {
   height: 500px;
   padding: 5px;
   margin: 100px; }
+
+.imagenesAsideIndex:hover {
+  filter: opacity(0.5); }
 
 .esteEsUnSubtitulo {
   background-color: rgba(87, 7, 56, 0.178);
@@ -121,7 +125,7 @@ a:hover {
 
 /* footer de index */
 .footerDeIndex {
-  height: 50px;
+  height: 140px;
   padding: 50px;
   margin: 10px;
   background-color: white;
@@ -133,8 +137,10 @@ a:hover {
 
 /* --------------SeccionNosotros--------------- */
 .grid__template--areas {
+  width: 70%;
+  max-width: 1000px;
   display: grid;
-  grid-template-areas: "header header" "section aside" "section aside" "section aside" "section aside" "foto foto" "footer footer"; }
+  grid-template-areas: "header" "section" "section" "section" "foto" "footer"; }
 
 .header__nosotros--grid {
   grid-area: header; }
@@ -144,13 +150,30 @@ a:hover {
   padding: 100px;
   grid-area: section; }
 
-.aside__nosotros--grid {
-  margin: 1fr;
-  padding: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  grid-area: aside; }
+.imagenObjetivo:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #ec731e;
+  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg); }
+
+.imagenVisionMundo:hover {
+  -webkit-transform: rotateY(280deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(280deg);
+  transform-style: preserve-3d; }
+
+.valores_foto:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #ec731e;
+  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg); }
+
+.foto__valores:hover {
+  filter: grayscale(80%); }
 
 .imagen__nosotros {
   grid-area: foto;
@@ -255,8 +278,7 @@ a:hover {
 
 /* este es el head */
 .contenedorEspecialistas {
-  width: 650px;
-  height: auto;
+  height: 1fr;
   padding: 70px;
   margin: 30px;
   overflow: hidden;
@@ -268,67 +290,36 @@ a:hover {
 
 .section__boostrap--especialistas {
   background-color: aqua;
-  width: auto;
-  height: auto; }
+  margin-top: auto;
+  height: auto;
+  width: 70%;
+  max-width: 1000px;
+  padding: 30px;
+  margin-left: 120px; }
+
+* {
+  padding: 0;
+  box-sizing: border-box; }
 
 .form__turnos--inicio {
-  text-align: center;
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 4px;
   background-color: #c500c5;
   text-transform: uppercase; }
 
-.bodyCovid19 {
-  /* Le agrego una gradiente al fondo */
-  background-image: linear-gradient(rgba(37, 0, 23, 0.123), rgba(255, 0, 170, 0.918));
-  /* Ordeno con un templateGridAreas */
-  display: grid;
-  grid-template-areas: "encabezado encabezado encabezado" "principal principal informacion" "principal principal informacion" "pieDePagina pieDePagina pieDePagina";
-  grid-template-rows: 75px 1fr 75px auto;
-  grid-template-columns: 10% auto 10%;
-  grid-column-gap: 5px;
-  grid-row-gap: 3px;
-  justify-content: center; }
+.subtitulo__h2--turnos {
+  text-align: center;
+  background-color: white;
+  color: tomato; }
 
-.headerCovid19 {
-  grid-area: encabezado; }
-
-.mainCovid19 {
-  grid-area: principal; }
-
-/* transicion de imagen covid */
-.imageCovid19 {
-  transition: all 10s;
-  width: 550px;
-  font-size: 550px; }
-
-/* Formato de imagen covid19 */
-.imageCovid19 {
-  width: 200px;
-  height: 200px;
-  border: solid 1px; }
-
-.imageCovid19:hover {
-  padding: 20px;
-  transform: skewY(25deg); }
-
-/* pongo una transicion al titulo */
-.tituloCovid19:hover {
-  background-color: midnightblue;
-  color: red; }
-
-/* Este es el aside y le coloco una animacion */
-.asideCovid19 {
-  grid-area: informacion;
-  width: auto;
-  height: auto;
-  animation: cambioDeColor 4s infinite;
-  background-color: #ff006a; }
-
-@keyframes cambioDeColor {
-  0% {
-    transform: scale(0); }
-  100% {
-    transform: scale(1.1); } }
-
-/* Este es el footer de covid19 y el agrego una animacion en el html */
-.footerCovid19 {
-  grid-area: pieDePagina; }
+.controles {
+  background-color: white;
+  color: #520052;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: block; }

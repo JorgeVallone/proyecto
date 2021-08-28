@@ -29,7 +29,7 @@
 
 <body>
   <header>
-  <img src="imagenes/logo.jpg" width="60" height="60" class="logo" />
+  <img src="imagenes/logo.jpg" width="60" height="60" class="logo" alt="logo" />
 
   <!-- Esto son los navs que voy a listar uno al lado del otro -->
   <!-- Les agregue unas sublistas para ir a otros lugares -->
@@ -74,12 +74,10 @@
       </li>
       <li><a href="turnos.html">TURNOS</a></li>
 
-
-      <li><a id="lista3" href="covid19.html">COVID19</a></li>
   </ul>
   </header>
 
-  <h1 class="titulo__pagina--h1">Especialistas</h1>
+  <h1 class="titulo__pagina--h1">ESPECIALISTAS</h1>
 
   <!-- acordeonon -->
   <section class="section__boostrap--especialistas">
@@ -95,11 +93,11 @@
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>CONSULTA</strong> Atendemos la demanda interna y externa con turnos programados para psicología y
-            psicopedagogía.
+            <strong>CONSULTA</strong> <p>Atendemos la demanda interna y externa con turnos programados para psicología y
+            psicopedagogía.</p>
 
-            La primera consulta la realiza un Equipo de Admisión, conformado por un psiquiatra y un psicólogo, quienes
-            evalúan las necesidades de tratamiento y realizan la derivación al o a los profesionales tratantes.
+            <p> primera consulta la realiza un Equipo de Admisión, conformado por un psiquiatra y un psicólogo, quienes
+            evalúan las necesidades de tratamiento y realizan la derivación al o a los profesionales tratantes.</p>
           </div>
         </div>
       </div>
@@ -166,6 +164,34 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Carrousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/Enfermeros hospital.jpg" class="d-block w-100" alt="enfermero">
+      </div>
+      <div class="carousel-item">
+        <img src="/imagenes/pasillo hospital.jpg" class="d-block w-100" alt="pasillo">
+      </div>
+      <div class="carousel-item">
+        <img src="/imagenes/doctorvirtual pexels-anna-shvets-4225920.jpg" class="d-block w-100" alt="doctora">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
   </section>
 

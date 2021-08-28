@@ -1,18 +1,17 @@
 
 /* --------------SeccionNosotros--------------- */
 .grid__template--areas{
+    width: 70%;
+    max-width: 1000px;
     display: grid;
     grid-template-areas: 
-"header header"
-"section aside"
-"section aside"
-"section aside"
-"section aside"
-"foto foto"
-"footer footer";
+"header"
+"section"
+"section"
+"section"
+"foto"
+"footer";
 }
-
-
 
 .header__nosotros--grid{
 grid-area: header;
@@ -22,14 +21,30 @@ grid-area: header;
     padding: 100px;
     grid-area:section ;
 }
-.aside__nosotros--grid{
-    margin: 1fr;
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    grid-area: aside;
+
+.imagenObjetivo:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    }
+.imagenVisionMundo:hover {
+-webkit-transform: rotateY(280deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(280deg);
+transform-style: preserve-3d;
 }
+.valores_foto:hover { border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    }
+.foto__valores:hover {filter: grayscale(80%);}
+
 
 .imagen__nosotros{
     grid-area: foto;
