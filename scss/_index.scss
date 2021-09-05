@@ -13,18 +13,17 @@ body{
 }
 
 /* Le doy formato al titulo de la hoja index */
-    .titulo__pagina--h1{
-    width: 1200px;
+    #titulo__pagina--h1{
     height: 0px;
     padding: 80px;
     margin: 0px;
-    background-color: white;
+    background-color: #ff73ce;
     text-align: center;
 }
 
 /* Le doy forma al titulo dentro de la pagina */
     .seccion1{
-        width: 70%;
+    width: auto;
     max-width: 1000px;
     height: 760px;
     padding: 16px;
@@ -34,14 +33,7 @@ body{
     background-color: violet;
     }
     /* estas son las imagenes de las redes sociales que pongo al lado de la otra caja */
-    .imagenesAsideIndex{
-        width: 100px;
-        height: 500px;
-        padding: 5px;
-        margin: 100px;
-      }
-        .imagenesAsideIndex:hover {filter: opacity(.5);}
-    
+  
 
     .esteEsUnSubtitulo {
         background-color: rgba(87, 7, 56, 0.178);
@@ -58,24 +50,50 @@ body{
         text-decoration-style: solid;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    .index__parrafo--mayuscula{
+    #index__parrafo--mayuscula{
+        text-decoration:solid; 
         text-transform: uppercase;
-        text-align-last: center;
-        font-weight: bold;
-        font-size: x-large;
-    }
-    .index__imagenes--medicos{
-        border-image: stretch;
-        text-align-last: center;
-    
     }
 
-    /* Pongo en linea la section y el aside */
-    section, aside{
-        display:inline-block;
-    }
-    .card-group{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+#contenedor__grid--index{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: 
+    "section" 
+    "aside"
+    "imagen" 
+    "footer"
+    ;
+}
+.seccion1{
+    grid-area: section;
+}
+#imagenesAsideIndex{
+    grid-area: aside;
+    margin: auto;
+    padding: 50px;
+    background-color:#fce8e7f8;
+}
+aside #imagenesAsideIndex:hover{filter: opacity(.5);}
+
+.imagenWatsapp{
+    padding: 20px;
+    margin: 30px;
+}
+.imagenInstagram{
+    padding: 20px;
+    margin: 30px;
+}
+.imagenZoom{
+    padding: 20px;
+    margin: 30px;
+}
+.imagenFacebook {
+    padding: 20px;
+    margin: 30px;
+}
+
+.footer__grid--index{
+    grid-area: footer;
+}

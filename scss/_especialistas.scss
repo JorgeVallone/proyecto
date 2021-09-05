@@ -1,3 +1,12 @@
+#titulo__pagina--h1{
+    height: 0px;
+    padding: 80px;
+    margin: 0px;
+    background-color: #ff73ce;
+    text-align: center;
+}
+
+
 /* este es el head */
 .contenedorEspecialistas{
     
@@ -14,12 +23,11 @@
     }
     
     .section__boostrap--especialistas{
-        background-color: aqua;
+        background-color: #FD3D5E;
         margin-top: auto;
         height: auto;
-        width: 70%;
         max-width: 1000px;
         padding: 30px;
-        margin-left: 120px;
+        margin-left: 190px;
     }
     

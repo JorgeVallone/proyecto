@@ -1,8 +1,14 @@
 
 /* --------------SeccionNosotros--------------- */
+#titulo__pagina--h1{
+        height: 0px;
+        padding: 80px;
+        margin: 0px;
+        background-color: #ff73ce;
+        text-align: center;
+    }
+
 .grid__template--areas{
-    width: 70%;
-    max-width: 1000px;
     display: grid;
     grid-template-areas: 
 "header"
@@ -17,9 +23,10 @@
 grid-area: header;
 } 
 .section__nosotros--grid{
-    margin: 1fr;
-    padding: 100px;
-    grid-area:section ;
+    margin-left: 140px;
+    padding: 20px;
+    grid-area:section;
+
 }
 
 .imagenObjetivo:hover{

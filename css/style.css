@@ -9,20 +9,19 @@
 
 /* realizo una seleccion general en el body con un color general que me afecta a todo */
 body {
-  background-color: rgba(235, 17, 90, 0.199); }
+  background-color: rgba(233, 7, 83, 0.199); }
 
 /* Le doy formato al titulo de la hoja index */
-.titulo__pagina--h1 {
-  width: 1200px;
+#titulo__pagina--h1 {
   height: 0px;
   padding: 80px;
   margin: 0px;
-  background-color: white;
+  background-color: #ff73ce;
   text-align: center; }
 
 /* Le doy forma al titulo dentro de la pagina */
 .seccion1 {
-  width: 70%;
+  width: auto;
   max-width: 1000px;
   height: 760px;
   padding: 16px;
@@ -32,15 +31,6 @@ body {
   background-color: violet; }
 
 /* estas son las imagenes de las redes sociales que pongo al lado de la otra caja */
-.imagenesAsideIndex {
-  width: 100px;
-  height: 500px;
-  padding: 5px;
-  margin: 100px; }
-
-.imagenesAsideIndex:hover {
-  filter: opacity(0.5); }
-
 .esteEsUnSubtitulo {
   background-color: rgba(87, 7, 56, 0.178);
   color: rgba(161, 12, 12, 0.466);
@@ -56,24 +46,46 @@ p {
   text-decoration-style: solid;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
-.index__parrafo--mayuscula {
-  text-transform: uppercase;
-  text-align-last: center;
-  font-weight: bold;
-  font-size: x-large; }
+#index__parrafo--mayuscula {
+  text-decoration: solid;
+  text-transform: uppercase; }
 
-.index__imagenes--medicos {
-  border-image: stretch;
-  text-align-last: center; }
-
-/* Pongo en linea la section y el aside */
-section, aside {
-  display: inline-block; }
-
-.card-group {
-  display: flex;
+#contenedor__grid--index {
+  display: grid;
   justify-content: center;
-  align-items: center; }
+  justify-items: center;
+  grid-template-areas: "section"  "aside" "imagen"  "footer"; }
+
+.seccion1 {
+  grid-area: section; }
+
+#imagenesAsideIndex {
+  grid-area: aside;
+  margin: auto;
+  padding: 50px;
+  background-color: #fce8e7f8; }
+
+aside #imagenesAsideIndex:hover {
+  filter: opacity(0.5); }
+
+.imagenWatsapp {
+  padding: 20px;
+  margin: 30px; }
+
+.imagenInstagram {
+  padding: 20px;
+  margin: 30px; }
+
+.imagenZoom {
+  padding: 20px;
+  margin: 30px; }
+
+.imagenFacebook {
+  padding: 20px;
+  margin: 30px; }
+
+.footer__grid--index {
+  grid-area: footer; }
 
 /* Lo posiciono al logo para que quede fijo igual que la lista */
 .logo {
@@ -87,14 +99,14 @@ section, aside {
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  background: violet;
+  background: #a504a585;
   width: auto;
   margin-top: 0px;
-  margin-left: 65px;
+  margin-left: 70px;
   margin-bottom: 5px;
   margin-right: 0px;
-  border: solid 2px black;
   position: fixed;
+  width: 100%;
   top: 0px;
   /* A las listas le doy por separado un formato */ }
   .lista li {
@@ -116,8 +128,13 @@ a:hover {
 .sublista {
   display: none;
   position: absolute;
-  background-color: #790579;
-  color: white; }
+  background-color: rgba(235, 0, 235, 0.767);
+  color: white;
+  padding: 0%; }
+
+.sublista li {
+  padding: 19px 0 20px 0;
+  justify-content: left; }
 
 /* Le doy un formato a la sublista para que pueda mostrarse cuando pasa el cursor */
 .inicio:hover > .sublista {
@@ -136,9 +153,14 @@ a:hover {
   text-align: center; }
 
 /* --------------SeccionNosotros--------------- */
+#titulo__pagina--h1 {
+  height: 0px;
+  padding: 80px;
+  margin: 0px;
+  background-color: #ff73ce;
+  text-align: center; }
+
 .grid__template--areas {
-  width: 70%;
-  max-width: 1000px;
   display: grid;
   grid-template-areas: "header" "section" "section" "section" "foto" "footer"; }
 
@@ -146,8 +168,8 @@ a:hover {
   grid-area: header; }
 
 .section__nosotros--grid {
-  margin: 1fr;
-  padding: 100px;
+  margin-left: 140px;
+  padding: 20px;
   grid-area: section; }
 
 .imagenObjetivo:hover {
@@ -195,6 +217,13 @@ a:hover {
   grid-template-rows: repeat(4, auto);
   padding: 10px;
   border-radius: 4px; }
+
+#titulo__pagina--h1 {
+  height: 0px;
+  padding: 80px;
+  margin: 0px;
+  background-color: #ff73ce;
+  text-align: center; }
 
 /* Dentro del header un subtitulo que tambien le doy class para variar estilo */
 .subtituloServicios {
@@ -276,6 +305,13 @@ a:hover {
   .contenido {
     flex-direction: column; } }
 
+#titulo__pagina--h1 {
+  height: 0px;
+  padding: 80px;
+  margin: 0px;
+  background-color: #ff73ce;
+  text-align: center; }
+
 /* este es el head */
 .contenedorEspecialistas {
   height: 1fr;
@@ -289,20 +325,19 @@ a:hover {
   color: blueviolet; }
 
 .section__boostrap--especialistas {
-  background-color: aqua;
+  background-color: #FD3D5E;
   margin-top: auto;
   height: auto;
-  width: 70%;
   max-width: 1000px;
   padding: 30px;
-  margin-left: 120px; }
+  margin-left: 190px; }
 
 * {
   padding: 0;
   box-sizing: border-box; }
 
 .form__turnos--inicio {
-  width: 400px;
+  width: 500px;
   padding: 30px;
   margin: auto;
   margin-top: 50px;
