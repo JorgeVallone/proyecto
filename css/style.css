@@ -108,6 +108,8 @@ aside #imagenesAsideIndex:hover {
   position: fixed;
   width: 100%;
   top: 0px;
+  justify-content: space-evenly;
+  display: flex;
   /* A las listas le doy por separado un formato */ }
   .lista li {
     display: inline-block;
@@ -286,51 +288,26 @@ a:hover {
 @media (min-width: 351px) and (max-width: 516px) {
   main .contenido {
     display: flex;
-    flex-direction: row;
-    background: blue; }
+    flex-direction: row; }
   .padreGrid {
     display: flex;
-    flex-direction: row; } }
+    flex-direction: row; }
+  #titulo__pagina--h1 {
+    height: 204px;
+    padding: 442px;
+    width: max-content; } }
 
 /* DispositivoX5 */
 @media (min-width: 0px) and (max-width: 350px) {
   .bodyServicios {
     display: flex;
-    flex-direction: column;
-    background: yellow; }
+    flex-direction: column; }
   .padreGrid {
     grid-template-columns: auto; }
   .headerServicios {
     flex-direction: column; }
   .contenido {
     flex-direction: column; } }
-
-#titulo__pagina--h1 {
-  height: 0px;
-  padding: 80px;
-  margin: 0px;
-  background-color: #ff73ce;
-  text-align: center; }
-
-/* este es el head */
-.contenedorEspecialistas {
-  height: 1fr;
-  padding: 70px;
-  margin: 30px;
-  overflow: hidden;
-  border: double;
-  background-color: violet; }
-
-.acordeon {
-  color: blueviolet; }
-
-.section__boostrap--especialistas {
-  background-color: #FD3D5E;
-  margin-top: auto;
-  height: auto;
-  max-width: 1000px;
-  padding: 30px;
-  margin-left: 190px; }
 
 * {
   padding: 0;

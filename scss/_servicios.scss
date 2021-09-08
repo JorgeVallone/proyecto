@@ -99,12 +99,18 @@ justify-content: center;
 main .contenido {
     display: flex;
     flex-direction: row;
-    background: blue;
 }
 .padreGrid {
     display: flex;
     flex-direction: row;
 }
+
+#titulo__pagina--h1{
+    height: 204px;
+    padding: 442px;
+    width: max-content;
+}
+
 }
 /* DispositivoX5 */
 
@@ -112,7 +118,6 @@ main .contenido {
 .bodyServicios{
         display: flex;
         flex-direction: column;
-        background: yellow;   
 }
 .padreGrid{
     grid-template-columns: auto;
