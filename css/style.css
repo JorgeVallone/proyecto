@@ -273,7 +273,9 @@ a:hover {
 /* DispositivoX5 */
 @media (min-width: 328px) and (max-width: 1024px) {
   #titulo__pagina--h1 {
-    width: 1408px; } }
+    width: 1408px; }
+  body {
+    width: fit-content; } }
 
 * {
   padding: 0;
