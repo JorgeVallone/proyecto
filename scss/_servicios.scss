@@ -14,14 +14,7 @@
     border-radius: 4px;
 }
 
-#titulo__pagina--h1{
-    height: 0px;
-    padding: 80px;
-    margin: 0px;
-    background-color: #ff73ce;
-    text-align: center;
-    
-}
+
 
 
 /* Dentro del header un subtitulo que tambien le doy class para variar estilo */
@@ -83,38 +76,7 @@ justify-content: center;
 }
 
 
-/* mediasQuery */
-
-@media (min-width: 517px) and (max-width:980px) {
-    .bodyServicios{
-        display: flex;
-        flex-direction: column;
-        background:rgb(230, 6, 118);
-        width: 1100px;
-
-    .lista{
-        max-width: min-content;
-    }
 
 
-}
-}
-
-/* DispositivoSmall */
-
-@media (min-width:351px) and (max-width:516px) {
-main .contenido {
-    display: flex;
-    flex-direction: row;
-}
-.padreGrid {
-    display: flex;
-    flex-direction: row;
-}
-.bodyServicios{
-    width: 1000px;
-}
-
-}
 /* DispositivoX5 */
 

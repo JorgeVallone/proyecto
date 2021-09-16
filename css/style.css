@@ -220,13 +220,6 @@ a:hover {
   padding: 10px;
   border-radius: 4px; }
 
-#titulo__pagina--h1 {
-  height: 0px;
-  padding: 80px;
-  margin: 0px;
-  background-color: #ff73ce;
-  text-align: center; }
-
 /* Dentro del header un subtitulo que tambien le doy class para variar estilo */
 .subtituloServicios {
   text-align: initial;
@@ -276,27 +269,6 @@ a:hover {
   text-decoration-style: solid;
   grid-column: 4 / 1;
   grid-row: span 4; }
-
-/* mediasQuery */
-@media (min-width: 517px) and (max-width: 980px) {
-  .bodyServicios {
-    display: flex;
-    flex-direction: column;
-    background: #e60676;
-    width: 1100px; }
-    .bodyServicios .lista {
-      max-width: min-content; } }
-
-/* DispositivoSmall */
-@media (min-width: 351px) and (max-width: 516px) {
-  main .contenido {
-    display: flex;
-    flex-direction: row; }
-  .padreGrid {
-    display: flex;
-    flex-direction: row; }
-  .bodyServicios {
-    width: 1000px; } }
 
 /* DispositivoX5 */
 * {
